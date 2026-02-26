@@ -1,0 +1,95 @@
+ <!doctype html>
+ <html lang=en>
+ <head>
+ <meta charset=UTF-8>
+ <meta name=viewport content="width=device-width,initial-scale=1">
+ <title>BEQI</title>
+ <link rel=icon type=png href=avatar.png>
+ <link rel=stylesheet href=styles.css>
+ <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css>
+ </head>
+ <body>
+ <canvas id=background-canvas></canvas>
+ <div class=main-container>
+ <nav class=navigation>
+ <a href=#home class="nav-link active" id=home-link>HOME</a>
+ <span class=separator>|</span>
+ <a href=#aboutme class=nav-link id=aboutme-link>ABOUT ME</a>
+ </nav>
+ <div class=panel>
+ <div id=home-content class="content active">
+ <div class=home-layout>
+ <div class=avatar-section>
+ <img src=avatar.png alt=Avatar class=avatar>
+ <h3 class=nickname>BEQUIETBRO</h3>
+ </div>
+ <div class=buttons-section>
+ <a href=https://github.com/bequietbro class="button github">
+ <span>GITHUB</span>
+ <i class="bi bi-github"></i>
+ </a>
+ <a href=https://steamcommunity.com/id/cookedbyme/ class="button steam">
+ <span>STEAM</span>
+ <i class="bi bi-steam"></i>
+ </a>
+ <a href=https://donatepay.ru/don/1144405 class="button donatepay animate-blink">
+ <span>DONATEPAY</span>
+ <i class="bi bi-cash-coin"></i>
+ </a>
+ <a href=https://boosty.to/beqi class="button boosty animate-blink">
+ <span>BOOSTY</span>
+ <i class="bi bi-star-fill"></i>
+ </a>
+ </div>
+ </div>
+ </div>
+ <div id=aboutme-content class=content>
+ <div class=about-text>
+ <h2>MY PC SPECS</h2>
+ <p>OS: Windows 10 by Flibustier</p>
+ <p>Processor: Xeon 2670v3</p>
+ <p>Memory: 2x16GB RAM DDR4 3200MHz</p>
+ <p>Graphics Card: RX 5700</p>
+ <p>Motherboard: Atermiter X99</p>
+ <p>Storage: 2x500GB HDD + 256GB NVME</p>
+ <p>PSU: 860W</p>
+ <p>Monitor 1: LG 1080p 60Hz</p>
+ <p>Keyboard: Ajazz AK820 Max Plus (Modded)</p>
+ <p>Mouse: Glorious Model I</p>
+ <p>‎</p>
+ <p class=italic>
+ Xeon was bought for a home server, but is temporarily installed in my PC.
+ </p>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class=controls-wrapper>
+ <div class=radio-control>
+ <button id=radio-button class="button radio-button">
+ <span>📻 RADIO</span>
+ <i class="bi bi-play-circle-fill" id=radio-icon></i>
+ </button>
+ <div class=radio-status id=radio-status>🔇 Offline</div>
+ </div>
+ <button id=terminal-button class="button terminal-button">
+ <span>🖥️ TERMINAL</span>
+ </button>
+ </div>
+ <div class=terminal-container id=terminal>
+ <canvas id=terminal-matrix-canvas></canvas>
+ <div class=terminal-header>
+ <span>BEQI@SHELL:~$</span>
+ <button class=terminal-close>×</button>
+ </div>
+ <div class=terminal-output id=terminal-output>
+ <div>Welcome to Web QuietShell. Type 'help' for commands.</div>
+ </div>
+ <div class=terminal-input-line>
+ <span class=prompt>$></span>
+ <input id=terminal-input autofocus>
+ </div>
+ </div>
+ <script src=script.js></script>
+ </body>
+ </html>
